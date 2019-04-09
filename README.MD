@@ -1,5 +1,5 @@
 # Easy EMR
-The open source Electronic Medical Record system.
+The open source Electronic Medical Record system. [Test site](https://emr.dennissauve.com)
 
 ## Mission
 To create a truly open-sourced emr system utilizing a SaaS approach. 
