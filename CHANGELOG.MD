@@ -4,6 +4,7 @@ All changes will be kept track of here, in descending date order.
 ---
 ## 04-08-19
 - Successfully migrated user/auth
+    - Needed `Schema::defaultStringLength(191);` in `App\Providers\AppServiceProvider::boot()` b/c of old MySQL database & dreamhost
 - Basic User Registration/Auth
 - "As a medical professional, I need to [crud] patients."
     - Create Patient Model
