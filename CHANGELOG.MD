@@ -2,6 +2,10 @@
 All changes will be kept track of here, in descending date order.
 
 ---
+## 04-12-19
+- Browse Patients
+- New Patient Template
+
 ## 04-08-19
 - Successfully migrated user/auth
     - Needed `Schema::defaultStringLength(191);` in `App\Providers\AppServiceProvider::boot()` b/c of old MySQL database & dreamhost

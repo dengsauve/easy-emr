@@ -7,6 +7,12 @@ use Illuminate\Http\Request;
 
 class PatientController extends Controller
 {
+    // Any user seeing Patients needs to be authorized
+    public function __construct()
+    {
+        $this->middleware('auth');
+    }
+
     /**
      * Display a listing of the resource.
      *
@@ -14,7 +20,8 @@ class PatientController extends Controller
      */
     public function index()
     {
-        //
+        $patients = Patient::all();
+        return view('patient.home', ['patients' => $patients]);
     }
 
     /**
@@ -24,7 +31,7 @@ class PatientController extends Controller
      */
     public function create()
     {
-        //
+        return view('patient.create');
     }
 
     /**
@@ -35,7 +42,7 @@ class PatientController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        dd($request);
     }
 
     /**
