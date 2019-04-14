@@ -42,7 +42,35 @@ class PatientController extends Controller
      */
     public function store(Request $request)
     {
-        dd($request);
+        // TODO: build validation
+        // name
+        $first_name = $request->first_name;
+        $middle_name = $request->middle_name;
+        $last_name = $request->last_name;
+
+        // contact info
+        $email = $request->email;
+        $phone_number = $request->phone_number;
+
+        // emergency contact info
+        $emergency_contact_name = $request->emergency_contact_name;
+        $emergency_contact_phone_number = $request->emergency_contact_phone_number;
+
+        // personal info
+        $birthday = $request->birthday;
+
+        $patient = Patient::create([
+            'first_name' => $first_name,
+            'middle_name' => $middle_name,
+            'last_name' => $last_name,
+            'email' => $email,
+            'phone_number' => $phone_number,
+            'emergency_contact_name' => $emergency_contact_name,
+            'emergency_contact_phone_number' => $emergency_contact_phone_number,
+            'birthday' => $birthday            
+        ]);
+
+        return redirect()->route('patients.show', $patient);
     }
 
     /**
@@ -53,7 +81,7 @@ class PatientController extends Controller
      */
     public function show(Patient $patient)
     {
-        //
+        return view('patient.show', ['patient' => $patient]);
     }
 
     /**

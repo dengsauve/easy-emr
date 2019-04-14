@@ -22,39 +22,45 @@
                         <form method='POST' action='/patients'>
                             @csrf
                             
-                            <div class='form-group'>
-                                <label for='first_name'>first name</label>
-                                <input type='text' class='form-control' name='first_name' />
+                            <div class="row">
+                                <div class='form-group col-lg-4'>
+                                    <label for='first_name'>first name</label>
+                                    <input type='text' class='form-control' name='first_name' />
+                                </div>
+
+                                <div class='form-group col-lg-4'>
+                                    <label for=''>middle name</label>
+                                    <input type='text' class='form-control' name='middle_name' />
+                                </div>
+
+                                <div class='form-group col-lg-4'>
+                                    <label for='last_name'>last name</label>
+                                    <input type='text' class='form-control' name='last_name' />
+                                </div>
                             </div>
 
-                            <div class='form-group'>
-                                <label for=''>middle name</label>
-                                <input type='text' class='form-control' name='middle_name' />
+                            <div class='row'>
+                                <div class='form-group col-lg-6'>
+                                    <label for='email'>email address</label>
+                                    <input type='email' class='form-control' name='email' />
+                                </div>
+
+                                <div class='form-group col-lg-6'>
+                                    <label for='phone_number'>phone number</label>
+                                    <input type='tel' class='form-control' name='phone_number' />
+                                </div>
                             </div>
 
-                            <div class='form-group'>
-                                <label for='last_name'>last name</label>
-                                <input type='text' class='form-control' name='last_name' />
-                            </div>
+                            <div class='row'>
+                                <div class='form-group col-lg-6'>
+                                    <label for='emergency_contact_name'>emergency contact name</label>
+                                    <input type='text' class='form-control' name='emergency_contact_name' />
+                                </div>
 
-                            <div class='form-group'>
-                                <label for='email'>email address</label>
-                                <input type='email' class='form-control' name='email' />
-                            </div>
-
-                            <div class='form-group'>
-                                <label for='phone_number'>phone number</label>
-                                <input type='tel' class='form-control' name='phone_number' />
-                            </div>
-
-                            <div class='form-group'>
-                                <label for='emergency_contact'>emergency contact</label>
-                                <input type='text' class='form-control' name='emergency_contact' />
-                            </div>
-
-                            <div class='form-group'>
-                                <label for='emergency_contact_phone_number'>emergency conact phone number</label>
-                                <input type='tel' class='form-control' name='emergency_conact_phone_number' />
+                                <div class='form-group col-lg-6'>
+                                    <label for='emergency_contact_phone_number'>emergency contact phone number</label>
+                                    <input type='tel' class='form-control' name='emergency_contact_phone_number' />
+                                </div>
                             </div>
                             
                             <div class='form-group'>
