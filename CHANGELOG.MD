@@ -4,6 +4,7 @@ All changes will be kept track of here, in descending date order.
 ---
 ## 04-13-19
 - Store patient logic
+- 
 
 ## 04-12-19
 - Browse Patients
