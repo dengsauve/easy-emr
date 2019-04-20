@@ -78,9 +78,12 @@ class PatientController extends Controller
      * @param  \App\Patient  $patient
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, Patient $patient)
+    public function update(StorePatient $request, Patient $patient)
     {
-        //
+        $patient->fill($request->all());
+        $patient->save();
+
+        return redirect()->route('patients.show', $patient);
     }
 
     /**

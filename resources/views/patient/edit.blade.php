@@ -32,7 +32,9 @@
                     <section>
                         <p class="h4">New Patient</p>
                         <hr/>
-                        <form method='POST' action='/patients'>
+                        <form method='POST' action='/patients/{{ $patient->id }}'>
+                            @method('PUT')
+
                             @csrf
                             
                             <div class="row">
