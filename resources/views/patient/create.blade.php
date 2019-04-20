@@ -3,6 +3,19 @@
 @section('content')
 <div class="container">
     <div class="row justify-content-center">
+    
+    <!-- Display any flashed errors -->
+    @if ($errors->any())
+        <div class="alert alert-danger">
+            <ul>
+                @foreach ($errors->all() as $error)
+                    <li>{{ $error }}</li>
+                @endforeach
+            </ul>
+        </div>
+    @endif
+    <!-- End Errors-->
+    
         <div class="col-md-8">
             <div class="card">
                 <div class="card-header">
