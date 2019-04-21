@@ -81,7 +81,7 @@
                                 <input type='date' class='form-control' name='birthday' value="{{ old('birthday') }}"/>
                             </div>
 
-                            <input type='submit' class='form-control' />
+                            <input type='submit' class='form-control btn btn-primary' />
 
                         </form>
                     </section>
