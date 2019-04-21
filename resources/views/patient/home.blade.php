@@ -1,7 +1,7 @@
 @extends('layouts.app')
 
 @section('content')
-<div class="container">
+<div class="container-fluid">
     <div class="row justify-content-center">
         <div class="col-md-8">
             <div class="card">
@@ -18,6 +18,9 @@
 
                     <section>
                         <p class="h4">Patients</p>
+                        <a href="{{ route('patients.create') }}" class="btn btn-primary">
+                            Create Patient
+                        </a>
                         <hr/>
                         <table class="table">
                             <thead class="thead-light">
