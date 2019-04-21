@@ -19,12 +19,30 @@
                     <section>
                         <p class="h4">Patients</p>
                         <hr/>
-                        @foreach ($patients as $patient)
-                            {{ $patient->first_name }}
-                            {{ $patient->last_name }}
-                            {{ $patient->phone_number }}
-                            {{ $patient->birthday }}
-                        @endforeach
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>Name</th>
+                                    <th>Phone Number</th>
+                                    <th>Birthday</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                @foreach ($patients as $patient)
+                                    <tr>
+                                        <td>
+                                            {{ $patient->last_name . ', ' . $patient->first_name }}
+                                        </td>
+                                        <td>
+                                            {{ $patient->phone_number }}
+                                        </td>
+                                        <td>
+                                            {{ $patient->birthday }}
+                                        </td>
+                                    </tr>
+                                @endforeach
+                            </tbody>
+                        </table>
                     </section>
                 </div>
 

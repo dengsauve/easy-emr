@@ -2,6 +2,11 @@
 All changes will be kept track of here, in descending date order.
 
 ---
+## 04-20-19
+- Finished Patient Actions
+- Patient uses soft delete
+
+
 ## 04-19-19
 - Store Patient Validation
 - Show Patient Page
