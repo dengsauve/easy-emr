@@ -5,7 +5,14 @@ All changes will be kept track of here, in descending date order.
 ## 04-20-19
 - Finished Patient Actions
 - Patient uses soft delete
-
+- View/Update/Delete Options added to patients.index
+- As a medical professional, I need to *schedule appointments*
+    - Create Appointment model
+        - Appointment Start Datetime
+        - Appointment Duration (minutes)
+        - Appointment Patient
+        - Appointment User
+        - Appointment Notes
 
 ## 04-19-19
 - Store Patient Validation

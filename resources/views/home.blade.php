@@ -19,14 +19,10 @@
                     <p class="help-text">Welcome {{ Auth::user()->name }}</p>
 
                     <section>
-                        <p class="h4">Patients</p>
-                        <hr/>
-                        @foreach ($patients as $patient)
-                            {{ $patient->first_name }}
-                            {{ $patient->last_name }}
-                            {{ $patient->phone_number }}
-                            {{ $patient->birthday }}
-                        @endforeach
+                        <a href="{{ route('patients.index') }}">
+                            Patients
+                        </a>
+                        
                     </section>
                 </div>
 
