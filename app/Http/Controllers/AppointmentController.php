@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Appointment;
 use Illuminate\Http\Request;
+use App\Http\Requests\StoreAppointment;
 
 class AppointmentController extends Controller
 {
@@ -25,7 +26,12 @@ class AppointmentController extends Controller
      */
     public function create()
     {
-        //
+        $patients = \App\Patient::all();
+        $users = \App\User::all();
+        return view('appointment.create', [
+            'patients' => $patients,
+            'users' => $users,
+        ]);
     }
 
     /**
@@ -34,9 +40,9 @@ class AppointmentController extends Controller
      * @param  \Illuminate\Http\Request  $request
      * @return \Illuminate\Http\Response
      */
-    public function store(Request $request)
+    public function store(StoreAppointment $request)
     {
-        //
+        
     }
 
     /**

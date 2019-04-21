@@ -42,7 +42,7 @@
                                 @foreach ($appointments as $appointment)
                                     <tr>
                                         <td>
-                                            {{ $appointment->patient->first_name }}
+                                            {{ $appointment->patient->name() }}
                                         </td>
                                         <td>
                                             {{ $appointment->user->name}}
@@ -57,9 +57,11 @@
                                             <a href="{{ route('appointments.edit', ['appointment' => $appointment]) }}">
                                                 edit
                                             </a>
-                                            <a href="{{ route('appointments.destroy', ['appointment' => $appointment]) }}">
-                                                delete
-                                            </a>
+                                            <form action="{{ route('appointments.destroy', ['appointment' => $appointment]) }}" method="POST">
+                                                @method('DELETE')
+                                                @csrf
+                                                <input type="submit" value="delete" class="btn btn-danger btn-sm" />
+                                            </form>
                                         </td>
                                     </tr>
                                 @endforeach

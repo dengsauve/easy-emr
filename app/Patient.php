@@ -27,4 +27,12 @@ class Patient extends Model
     {
         return $this->hasMany('App\Appointment');
     }
+
+    /**
+     * Get the Patient's Full Name
+     */
+    public function name()
+    {
+        return $this->first_name . ' ' . $this->last_name;
+    }
 }
