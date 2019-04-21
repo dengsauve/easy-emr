@@ -19,25 +19,28 @@
                     <section>
                         <p class="h4">Patients</p>
                         <hr/>
-                        <table>
-                            <thead>
+                        <table class="table">
+                            <thead class="thead-light">
                                 <tr>
                                     <th>Name</th>
-                                    <th>Phone Number</th>
-                                    <th>Birthday</th>
+                                    <th>Actions</th>
                                 </tr>
                             </thead>
                             <tbody>
                                 @foreach ($patients as $patient)
                                     <tr>
                                         <td>
-                                            {{ $patient->last_name . ', ' . $patient->first_name }}
+                                            <a href="{{ route('patients.show', ['patient' => $patient]) }}">
+                                                {{ $patient->last_name . ', ' . $patient->first_name }}
+                                            </a>
                                         </td>
                                         <td>
-                                            {{ $patient->phone_number }}
-                                        </td>
-                                        <td>
-                                            {{ $patient->birthday }}
+                                            <a href="{{ route('patients.edit', ['patient' => $patient]) }}">
+                                                edit
+                                            </a>
+                                            <a href="{{ route('patients.destroy', ['patient' => $patient]) }}">
+                                                delete
+                                            </a>
                                         </td>
                                     </tr>
                                 @endforeach
