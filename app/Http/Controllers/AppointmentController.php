@@ -42,7 +42,9 @@ class AppointmentController extends Controller
      */
     public function store(StoreAppointment $request)
     {
-        
+        $appointment = Appointment::create( $request->all() );
+
+        return redirect()->route('appointments.show', ['appointment' => $appointment]);
     }
 
     /**
@@ -53,7 +55,7 @@ class AppointmentController extends Controller
      */
     public function show(Appointment $appointment)
     {
-        //
+        return view('appointment.show', ['appointment' => $appointment]);
     }
 
     /**

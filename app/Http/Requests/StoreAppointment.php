@@ -13,7 +13,8 @@ class StoreAppointment extends FormRequest
      */
     public function authorize()
     {
-        return false;
+        // TODO: Figure out authorization rules after roles have been created
+        return true;
     }
 
     /**
@@ -24,7 +25,11 @@ class StoreAppointment extends FormRequest
     public function rules()
     {
         return [
-            //
+            'appointment_start_time' => 'required|date',
+            'appointment_duration' => 'required|integer',
+            'patient_id' => 'required|exists:patients,id',
+            'user_id' => 'required|exists:users,id',
+            'notes' => 'required',
         ];
     }
 }

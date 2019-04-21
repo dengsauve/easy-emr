@@ -13,6 +13,7 @@ class StorePatient extends FormRequest
      */
     public function authorize()
     {
+        // TODO: Figure out authorization rules after roles have been created
         return true;
     }
 
