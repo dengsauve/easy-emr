@@ -22,7 +22,10 @@
                         <a href="{{ route('patients.index') }}">
                             Patients
                         </a>
-                        
+                        <br/>
+                        <a href="{{ route('appointments.index') }}">
+                            Appointments
+                        </a>
                     </section>
                 </div>
 
