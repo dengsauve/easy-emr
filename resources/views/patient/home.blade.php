@@ -41,9 +41,11 @@
                                             <a href="{{ route('patients.edit', ['patient' => $patient]) }}">
                                                 edit
                                             </a>
-                                            <a href="{{ route('patients.destroy', ['patient' => $patient]) }}">
-                                                delete
-                                            </a>
+                                            <form action="{{ route('patients.destroy', ['patient' => $patient]) }}" method="POST">
+                                                @method('DELETE')
+                                                @csrf
+                                                <input type="submit" value="delete" class="btn btn-danger btn-sm" />
+                                            </form>
                                         </td>
                                     </tr>
                                 @endforeach

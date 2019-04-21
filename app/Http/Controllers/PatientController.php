@@ -96,6 +96,6 @@ class PatientController extends Controller
     {
         $patient->delete();
 
-        return $this->index();
+        return redirect()->route('patients.index');
     }
 }
