@@ -36,4 +36,12 @@ class User extends Authenticatable
     protected $casts = [
         'email_verified_at' => 'datetime',
     ];
+
+    /**
+     * Get the appointments for the user
+     */
+    public function appointments()
+    {
+        return $this->hasMany('App\Appointment');
+    }
 }

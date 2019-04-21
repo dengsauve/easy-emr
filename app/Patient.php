@@ -19,4 +19,12 @@ class Patient extends Model
         'emergency_contact_phone_number',
         'birthday'
     ];
+
+    /**
+     * Get the appointments for the patient
+     */
+    public function appointments()
+    {
+        return $this->hasMany('App\Appointment');
+    }
 }
