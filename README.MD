@@ -2,7 +2,7 @@
 The open source Electronic Medical Record system. [Test site](https://emr.dennissauve.com)
 
 ## Mission
-To create a truly open-sourced emr system utilizing a SaaS approach. 
+To create a truly open-sourced, physician and patient friendly emr system utilizing a SaaS approach.
 
 ## Feature Goals
 - A clean, intuitive UI that allows medical professionals the ability to work quickly and with minimal training
@@ -12,11 +12,12 @@ To create a truly open-sourced emr system utilizing a SaaS approach.
 - iOS application for medical professionals on the go. 
 - iOS application for patients to view their information, and in the hope to someday partner with apple to be able to import Apple Health data for review by Doctors.
 
-
 ## Why?
 I hear, time and again, from Physician's Assistants to Nurses, to Doctors and Administrative staff, that any current EMR software is terrible.
 
 I want to change how medical staff views EMR systems. I want them to have tools they can trust and rely on. I want them to have tools they enjoy using. I want to give Doctors more face time with patients, and less screen time with the computer.
+
+I also want patients to be able to own their health data, as they should have been able to a decade ago. No more calling in and waiting on hold for hours just to get a slice of information. Everything should be at the patient's fingertips.
 
 ## How
 By anticipating the needs of the medical field and using a web based SaaS approach, a dynamic, continuously developed EMR system can be created to meet the needs of a hospital and it's staff. More features may be added and developed by actively soliciting and critically reviewing feedback from the staff.
