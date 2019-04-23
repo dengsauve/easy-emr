@@ -2,8 +2,14 @@
 All changes will be kept track of here, in descending date order.
 
 ---
+## 04-22-19
+- Show Appointment
+
+
 ## 04-21-19
-- 
+- Appointment Resources
+- Appointment Dashboard
+- Appointment CRUDs
 
 ## 04-20-19
 - Finished Patient Actions
