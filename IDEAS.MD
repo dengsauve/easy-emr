@@ -7,18 +7,23 @@ I'm including summary research results here. Items such as EMR features, reporti
 *An electronic health record (EHR) contains patient health information, such as:*
 
 - [ ] Administrative and billing data
+    - [ ] Insurance Provider(s)
 - [ ] Patient Chart
     - [ ] Patient demographics
+        - [x] D.O.B.
+        - [x] Gender
+        - [ ] Ethnicity
+    - [ ] Blood Type
+    - [x] Allergies
+    - [x] major diagnoses
+    - [x] major medical history
     - [ ] Progress notes
     - [ ] Vital signs
-    - [ ] Medical histories
-    - [ ] Diagnoses
     - [ ] Medications
     - [ ] Immunization dates
-    - [ ] Allergies
-    - [ ] Notes
 - [ ] Radiology images
 - [ ] Lab and test results
+- [ ] Addresses (past/current)
 
 ## Family History
 

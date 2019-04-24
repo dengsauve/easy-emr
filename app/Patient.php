@@ -17,7 +17,11 @@ class Patient extends Model
         'phone_number',
         'emergency_contact_name',
         'emergency_contact_phone_number',
-        'birthday'
+        'birthday',
+        'gender',
+        'allergies',
+        'diagnoses',
+        'medical_history',
     ];
 
     /**

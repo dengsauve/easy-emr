@@ -81,6 +81,37 @@
                                 <input type='date' class='form-control' name='birthday' value="{{ old('birthday') }}"/>
                             </div>
 
+                            <div class="form-group">
+                                <label for='gender'>Gender</label>
+                                <select class="form-control" name="gender">
+                                    <option value="0">Female</option>
+                                    <option value="1">Male</option>
+                                </select>
+                            </div>
+
+                            <div class="row">
+                                <div class='form-group col-12'>
+                                    <label for='allergies'>Allergies</label>
+                                    <textarea class='form-control' name='allergies'>
+                                        {{ old('allergies') }}
+                                    </textarea>
+                                </div>
+
+                                <div class='form-group col-12'>
+                                    <label for='diagnoses'>Diagnoses</label>
+                                    <textarea class='form-control' name='diagnoses'>
+                                        {{ old('diagnoses') }}
+                                    </textarea>
+                                </div>
+                                
+                                <div class='form-group col-12'>
+                                    <label for='medical_history'>Medical History</label>
+                                    <textarea class='form-control' name='medical_history'>
+                                        {{ old('medical_history') }}
+                                    </textarea>
+                                </div>
+                            </div>
+
                             <input type='submit' class='form-control btn btn-primary' />
 
                         </form>

@@ -2,6 +2,9 @@
 All changes will be kept track of here, in descending date order.
 
 ---
+## 04-24-19
+- Updated Patient Model w/(gender, allergies, diagnoses, medical_history)
+
 ## 04-22-19
 - Show Appointment
 - Research on what EMRs

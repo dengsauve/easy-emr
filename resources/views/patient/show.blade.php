@@ -48,7 +48,30 @@
                         <dd>
                             {{ $patient->birthday }}
                         </dd>
-                        
+                        <dt>
+                            Gender
+                        </dt>
+                        <dd>
+                            {{ $patient->gender }}
+                        </dd>
+                        <dt>
+                            Allergies
+                        </dt>
+                        <dd>
+                            {{ $patient->gender }}
+                        </dd>
+                        <dt>
+                            Diagnoses
+                        </dt>
+                        <dd>
+                            {{ $patient->diagnoses }}
+                        </dd>
+                        <dt>
+                            Medical History
+                        </dt>
+                        <dd>
+                            {{ $patient->medical_history }}
+                        </dd>
                     </dl>
                 </div>
 
