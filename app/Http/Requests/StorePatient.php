@@ -33,6 +33,10 @@ class StorePatient extends FormRequest
             'emergency_contact_name' => 'required',
             'emergency_contact_phone_number' => 'required',
             'birthday' => 'required|date',
+            'gender' => 'required|boolean',
+            'allergies' => 'required',
+            'diagnoses' => 'required',
+            'medical_history' => 'required'
         ];
     }
 }
