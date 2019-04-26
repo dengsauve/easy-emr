@@ -10,4 +10,15 @@ return [
         5 => 'Native Hawaiian or Other Pacific Islander',
         6 => 'White',
     ],
+    // Sourced from https://www.infoplease.com/science-health/health/blood-types
+    'blood_types' => [
+        1 => 'o+',
+        2 => 'o-',
+        3 => 'a+',
+        4 => 'a-',
+        5 => 'b+',
+        6 => 'b-',
+        7 => 'ab+',
+        8 => 'ab-',
+    ]
 ];

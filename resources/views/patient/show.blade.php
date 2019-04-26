@@ -60,6 +60,12 @@
                         <dd>
                             {{ $patient->getEthnicity() }}
                         </dd>
+                        <dt>
+                            Blood Type
+                        </dt>
+                        <dd>
+                            {{ $patient->getBloodType() }}
+                        </dd>
                         
                         <dt>
                             Allergies

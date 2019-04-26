@@ -52,6 +52,15 @@
                                 </div>
                             </div>
 
+                            <div class='form-group'>
+                                <label for='birthday'>birthday</label>
+                                <input type='date' class='form-control' name='birthday' value="{{ old('birthday') }}"/>
+                            </div>
+
+                            <br/>
+                            <p class="h5">Contact Information</p>
+                            <hr/>
+
                             <div class='row'>
                                 <div class='form-group col-lg-6'>
                                     <label for='email'>email address</label>
@@ -75,21 +84,12 @@
                                     <input type='tel' class='form-control' name='emergency_contact_phone_number' value="{{ old('emergency_contact_phone_number') }}"/>
                                 </div>
                             </div>
-                            
-                            <div class='form-group'>
-                                <label for='birthday'>birthday</label>
-                                <input type='date' class='form-control' name='birthday' value="{{ old('birthday') }}"/>
-                            </div>
+
+                            <br/>
+                            <p class="h5">Demographic Information</p>
+                            <hr/>
 
                             <div class="row">
-
-                                <div class="form-group col-12 col-lg-6">
-                                    <label for='gender'>Gender</label>
-                                    <select class="form-control" name="gender">
-                                        <option value="0">Female</option>
-                                        <option value="1">Male</option>
-                                    </select>
-                                </div>
 
                                 <div class="form-group col-12 col-lg-6">
                                     <label for="ethnicity">Ethnicity</label>
@@ -102,27 +102,50 @@
                                     </select>                                
                                 </div>
 
+                                <div class="form-group col-12 col-lg-3">
+                                    <label for='gender'>Gender</label>
+                                    <select class="form-control" name="gender">
+                                        <option value="0">Female</option>
+                                        <option value="1">Male</option>
+                                    </select>
+                                </div>
+
+                                <div class="form-group col-12 col-lg-3">
+                                    <label for="blood_type">Blood Type</label>
+                                    <select class="form-control" name="blood_type">
+                                        @foreach( $blood_types as $key => $blood_type )
+                                            <option value="{{ $key }}">
+                                                {{ $blood_type }}
+                                            </option>
+                                        @endforeach
+                                    </select>                                
+                                </div>
+
                             </div>
+
+                            <br/>
+                            <p class="h5">Medical Information</p>
+                            <hr/>
 
                             <div class="row">
                                 <div class='form-group col-12'>
                                     <label for='allergies'>Allergies</label>
                                     <textarea class='form-control' name='allergies'>
-                                        {{ old('allergies') }}
+{{ old('allergies') }}
                                     </textarea>
                                 </div>
 
                                 <div class='form-group col-12'>
                                     <label for='diagnoses'>Diagnoses</label>
                                     <textarea class='form-control' name='diagnoses'>
-                                        {{ old('diagnoses') }}
+{{ old('diagnoses') }}
                                     </textarea>
                                 </div>
                                 
                                 <div class='form-group col-12'>
                                     <label for='medical_history'>Medical History</label>
                                     <textarea class='form-control' name='medical_history'>
-                                        {{ old('medical_history') }}
+{{ old('medical_history') }}
                                     </textarea>
                                 </div>
                             </div>

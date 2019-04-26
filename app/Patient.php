@@ -20,6 +20,7 @@ class Patient extends Model
         'birthday',
         'gender',
         'ethnicity',
+        'blood_type',
         'allergies',
         'diagnoses',
         'medical_history',
@@ -45,5 +46,11 @@ class Patient extends Model
     {
         $ethnicity_id = $this->ethnicity;
         return \Config::get('constants.ethnicities.' . $ethnicity_id);
+    }
+
+    public function getBloodType()
+    {
+        $blood_type_id = $this->blood_type;
+        return \Config::get('constants.blood_type.' . $blood_type_id);
     }
 }

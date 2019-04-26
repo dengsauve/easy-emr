@@ -33,7 +33,13 @@ class PatientController extends Controller
     public function create()
     {
         $ethnicities = \Config::get('constants.ethnicities');
-        return view('patient.create', ['ethnicities' => $ethnicities]);
+        $blood_types = \Config::get('constants.blood_types');
+        return view('patient.create', 
+            [
+                'ethnicities' => $ethnicities,
+                'blood_types' => $blood_types,
+            ]
+        );
     }
 
     /**
@@ -70,7 +76,14 @@ class PatientController extends Controller
     public function edit(Patient $patient)
     {
         $ethnicities = \Config::get('constants.ethnicities');
-        return view('patient.edit', ['patient' => $patient]);
+        $blood_types = \Config::get('constants.blood_types');
+        return view('patient.edit',
+            [
+                'patient' => $patient,
+                'ethnicities' => $ethnicities,
+                'blood_types' => $blood_types,
+            ]
+        );
     }
 
     /**
