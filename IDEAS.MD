@@ -12,7 +12,7 @@ I'm including summary research results here. Items such as EMR features, reporti
     - [ ] Patient demographics
         - [x] D.O.B.
         - [x] Gender
-        - [ ] Ethnicity
+        - [x] Ethnicity
     - [ ] Blood Type
     - [x] Allergies
     - [x] major diagnoses

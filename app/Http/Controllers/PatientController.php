@@ -32,7 +32,8 @@ class PatientController extends Controller
      */
     public function create()
     {
-        return view('patient.create');
+        $ethnicities = \Config::get('constants.ethnicities');
+        return view('patient.create', ['ethnicities' => $ethnicities]);
     }
 
     /**
@@ -68,6 +69,7 @@ class PatientController extends Controller
      */
     public function edit(Patient $patient)
     {
+        $ethnicities = \Config::get('constants.ethnicities');
         return view('patient.edit', ['patient' => $patient]);
     }
 

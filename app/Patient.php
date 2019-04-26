@@ -19,6 +19,7 @@ class Patient extends Model
         'emergency_contact_phone_number',
         'birthday',
         'gender',
+        'ethnicity',
         'allergies',
         'diagnoses',
         'medical_history',
@@ -38,5 +39,11 @@ class Patient extends Model
     public function name()
     {
         return $this->first_name . ' ' . $this->last_name;
+    }
+
+    public function getEthnicity()
+    {
+        $ethnicity_id = $this->ethnicity;
+        return \Config::get('constants.ethnicities.' . $ethnicity_id);
     }
 }

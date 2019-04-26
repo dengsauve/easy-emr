@@ -55,6 +55,13 @@
                             {{ $patient->gender }}
                         </dd>
                         <dt>
+                            Ethnicity
+                        </dt>
+                        <dd>
+                            {{ $patient->getEthnicity() }}
+                        </dd>
+                        
+                        <dt>
                             Allergies
                         </dt>
                         <dd>

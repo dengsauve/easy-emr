@@ -81,12 +81,27 @@
                                 <input type='date' class='form-control' name='birthday' value="{{ old('birthday') }}"/>
                             </div>
 
-                            <div class="form-group">
-                                <label for='gender'>Gender</label>
-                                <select class="form-control" name="gender">
-                                    <option value="0">Female</option>
-                                    <option value="1">Male</option>
-                                </select>
+                            <div class="row">
+
+                                <div class="form-group col-12 col-lg-6">
+                                    <label for='gender'>Gender</label>
+                                    <select class="form-control" name="gender">
+                                        <option value="0">Female</option>
+                                        <option value="1">Male</option>
+                                    </select>
+                                </div>
+
+                                <div class="form-group col-12 col-lg-6">
+                                    <label for="ethnicity">Ethnicity</label>
+                                    <select class="form-control" name="ethnicity">
+                                        @foreach( $ethnicities as $key => $ethnicity )
+                                            <option value="{{ $key }}">
+                                                {{ $ethnicity }}
+                                            </option>
+                                        @endforeach
+                                    </select>                                
+                                </div>
+
                             </div>
 
                             <div class="row">

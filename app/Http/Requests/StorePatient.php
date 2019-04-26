@@ -36,7 +36,7 @@ class StorePatient extends FormRequest
             'gender' => 'required|boolean',
             'allergies' => 'required',
             'diagnoses' => 'required',
-            'medical_history' => 'required'
+            'medical_history' => 'required',
         ];
     }
 }
