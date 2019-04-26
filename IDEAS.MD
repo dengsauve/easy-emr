@@ -2,6 +2,10 @@
 
 I'm including summary research results here. Items such as EMR features, reporting requirements, etc.
 
+## Charting
+
+Showing a patient will show a base chart, and you can make more "appointment charts" that will be displayed along with the base chart.
+
 ## What's in an EMR Anyway?
 
 *An electronic health record (EHR) contains patient health information, such as:*
@@ -9,11 +13,11 @@ I'm including summary research results here. Items such as EMR features, reporti
 - [ ] Administrative and billing data
     - [ ] Insurance Provider(s)
 - [ ] Patient Chart
-    - [ ] Patient demographics
+    - [x] Patient demographics
         - [x] D.O.B.
         - [x] Gender
         - [x] Ethnicity
-    - [ ] Blood Type
+    - [x] Blood Type
     - [x] Allergies
     - [x] major diagnoses
     - [x] major medical history
