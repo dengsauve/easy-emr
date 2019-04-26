@@ -8,6 +8,12 @@ use App\Http\Requests\StoreAppointment;
 
 class AppointmentController extends Controller
 {
+    // Any user seeing Patients needs to be authorized
+    public function __construct()
+    {
+        $this->middleware('auth');
+    }
+    
     /**
      * Display a listing of the resource.
      *
