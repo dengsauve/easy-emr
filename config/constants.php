@@ -20,5 +20,11 @@ return [
         6 => 'b-',
         7 => 'ab+',
         8 => 'ab-',
-    ]
+    ],
+    // Working appointment types
+    'appointment_types' => [
+        1 => 'initial',
+        2 => 'follow up',
+        3 => 'routine',
+    ],
 ];

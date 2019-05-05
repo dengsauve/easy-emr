@@ -13,6 +13,11 @@
                 <div class="card-body">
                     <dl class='dl-horizontal'>
                         <dt>
+                            Appointment Type
+                        </dt>
+                        <dd>
+                            {{ $appointment->getType() }}
+                        <dt>
                             Date and Time
                         </dt>
                         <dd>

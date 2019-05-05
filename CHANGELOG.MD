@@ -2,6 +2,10 @@
 All changes will be kept track of here, in descending date order.
 
 ---
+## 05-04-19
+- Creating Appointment Chart Model
+- Update appointment model with Appointment type (initial encounter, follow up, routine)
+
 ## 04-24-19
 - Updated Patient Model w/(gender, allergies, diagnoses, medical_history)
 

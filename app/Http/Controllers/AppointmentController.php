@@ -34,9 +34,11 @@ class AppointmentController extends Controller
     {
         $patients = \App\Patient::all();
         $users = \App\User::all();
+        $types = \Config::get('constants.appointment_types');
         return view('appointment.create', [
             'patients' => $patients,
             'users' => $users,
+            'types' => $types,
         ]);
     }
 

@@ -29,6 +29,7 @@ class StoreAppointment extends FormRequest
             'appointment_duration' => 'required|integer',
             'patient_id' => 'required|exists:patients,id',
             'user_id' => 'required|exists:users,id',
+            'type' => 'required|integer',
             'notes' => 'required',
         ];
     }

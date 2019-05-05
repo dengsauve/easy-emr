@@ -15,6 +15,7 @@ class Appointment extends Model
         'patient_id',
         'user_id',
         'notes',
+        'type',
     ];
 
     /**
@@ -31,5 +32,11 @@ class Appointment extends Model
     public function patient()
     {
         return $this->belongsTo('App\Patient');
+    }
+
+    public function getType()
+    {
+        $appointment_type_id = $this->type;
+        return \Config::get('constants.appointment_type.' . $appointment_type_id);
     }
 }

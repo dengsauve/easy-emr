@@ -6,6 +6,21 @@ I'm including summary research results here. Items such as EMR features, reporti
 
 Showing a patient will show a base chart, and you can make more "appointment charts" that will be displayed along with the base chart.
 
+**What's on a Chart?**
+
+Oddly enough, it's like a revisionable history of a patient.
+
+- [ ] Chief Complaint
+- [ ] History of present illness
+- [ ] Physical Examination Notes
+- [ ] Blood Pressure
+- [ ] Temperature
+- [ ] Weight
+- [ ] Assessment / Plan
+- [ ] Orders & Prescriptions
+- [ ] Test Results
+- [ ] Progress / Notes
+
 ## What's in an EMR Anyway?
 
 *An electronic health record (EHR) contains patient health information, such as:*

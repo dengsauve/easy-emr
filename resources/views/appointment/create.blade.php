@@ -52,8 +52,8 @@
                             <div class='row'>
                                 <div class="form-group col-lg-6">
                                     <label for="patient_id">Patient Name</label>
-                                    <select class="form-control" id="patient_id">
-                                        <option hidden disabled selected value> -- select a patient -- </option>
+                                    <select class="form-control" name="patient_id">
+                                        <option hidden disabled selected> -- select a patient -- </option>
                                         @foreach( $patients as $patient )
                                             <option value='{{ $patient->id }}'>{{ $patient->name() }}</option>
                                         @endforeach
@@ -62,8 +62,8 @@
 
                                 <div class="form-group col-lg-6">
                                     <label for="user_id">User Name</label>
-                                    <select class="form-control" id="user_id">
-                                        <option hidden disabled selected value> -- select an user -- </option>
+                                    <select class="form-control" name="user_id">
+                                        <option hidden disabled selected> -- select an user -- </option>
                                         @foreach( $users as $user )
                                             <option value='{{ $user->id }}'>{{ $user->name }}</option>
                                         @endforeach
@@ -72,6 +72,17 @@
                             </div>
 
                             <div class='row'>
+
+                                <div class='form-group col-12'>
+                                    <label for='type'>Appointment Type</label>
+                                    <select class='form-control' name='type'>
+                                        <option hidden disabled selected> -- select a type -- </option>
+                                        @foreach( $types as $key => $type)
+                                        <option value="{{ $key }}">{{ $type }}</option>
+                                        @endforeach
+                                    </select>
+                                </div>
+
                                 <div class='form-group col-12'>
                                     <label for='notes'>Notes</label>
                                     <textarea class='form-control' name='notes'>
