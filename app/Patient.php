@@ -35,6 +35,14 @@ class Patient extends Model
     }
 
     /**
+     * Get the charts for this Patient
+     */
+    public function charts()
+    {
+        return $this->hasMany('App\Chart');
+    }
+
+    /**
      * Get the Patient's Full Name
      */
     public function name()
@@ -42,12 +50,18 @@ class Patient extends Model
         return $this->first_name . ' ' . $this->last_name;
     }
 
+    /**
+     * Get patient's ethnicity as defined in config/constants.php
+     */
     public function getEthnicity()
     {
         $ethnicity_id = $this->ethnicity;
         return \Config::get('constants.ethnicities.' . $ethnicity_id);
     }
 
+    /**
+     * Get patient's ethnicity as defined in config/constants.php
+     */
     public function getBloodType()
     {
         $blood_type_id = $this->blood_type;

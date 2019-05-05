@@ -10,16 +10,16 @@ Showing a patient will show a base chart, and you can make more "appointment cha
 
 Oddly enough, it's like a revisionable history of a patient.
 
-- [ ] Chief Complaint
-- [ ] History of present illness
-- [ ] Physical Examination Notes
-- [ ] Blood Pressure
-- [ ] Temperature
-- [ ] Weight
-- [ ] Assessment / Plan
-- [ ] Orders & Prescriptions
+- [x] Chief Complaint
+- [x] History of present illness
+- [x] Physical Examination Notes
+- [x] Blood Pressure
+- [x] Temperature
+- [x] Weight
+- [x] Assessment / Plan
+- [x] Orders & Prescriptions
 - [ ] Test Results
-- [ ] Progress / Notes
+- [x] Progress / Notes
 
 ## What's in an EMR Anyway?
 

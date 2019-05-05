@@ -34,6 +34,17 @@ class Appointment extends Model
         return $this->belongsTo('App\Patient');
     }
 
+    /**
+     * Get the chart(s) for this appointment
+     */
+    public function charts()
+    {
+        return $this->hasMany('App\Chart');
+    }
+
+    /**
+     * Get appointment's type as defined in config/constants.php
+     */
     public function getType()
     {
         $appointment_type_id = $this->type;
