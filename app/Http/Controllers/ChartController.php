@@ -3,7 +3,10 @@
 namespace App\Http\Controllers;
 
 use App\Chart;
+use App\Patient;
+use App\Appointment;
 use Illuminate\Http\Request;
+use App\Http\Requests\StoreChart;
 
 class ChartController extends Controller
 {
@@ -24,7 +27,16 @@ class ChartController extends Controller
      */
     public function create()
     {
-        //
+        $patient_id = $_GET['patient_id'];
+        $patient = Patient::find($patient_id);
+
+        $appointment_id = $_GET['appointment_id'];
+        $appointment = Appointment::find($appointment_id);
+
+        return view('chart.create', [
+            'patient' => $patient,
+            'appointment' => $appointment,
+        ]);
     }
 
     /**
@@ -33,9 +45,12 @@ class ChartController extends Controller
      * @param  \Illuminate\Http\Request  $request
      * @return \Illuminate\Http\Response
      */
-    public function store(Request $request)
+    public function store(StoreChart $request)
     {
-        //
+        $chart = Chart::create( $request->all() );
+        $appointment = Appointment::find($request->appointment_id);
+
+        return redirect()->route('appointments.show', ['appointment' => $appointment]);
     }
 
     /**

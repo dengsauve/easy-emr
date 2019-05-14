@@ -24,3 +24,6 @@ Route::resource('patients', 'PatientController');
 
 // Appointment Routes
 Route::resource('appointments', 'AppointmentController');
+
+// Chart Routes
+Route::resource('charts', 'ChartController');

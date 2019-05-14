@@ -4,6 +4,7 @@ All changes will be kept track of here, in descending date order.
 ---
 ## 05-05-19
 - Creating Appointment Chart Model
+- Appointment Chart Shows for appointment (with opt to create new)
 
 ## 05-04-19
 - Update appointment model with Appointment type (initial encounter, follow up, routine)

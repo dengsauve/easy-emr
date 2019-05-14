@@ -4,8 +4,9 @@
 
 <div class="container">
     <div class="row justify-content-center">
-        <div class="col-md-8">
+        <div class="col-md-12">
             <div class="card">
+                
                 <div class="card-header">
                     {{ $appointment->patient->name() . ' with ' . $appointment->user->name }}
                 </div>
@@ -38,8 +39,23 @@
                     </dl>
                 </div>
 
-
             </div>
+
+            <div class='card'>
+            
+                <div class='card-header'>
+                    Charts
+                </div>
+            
+                <div class='card-body'>
+                    <a href="/charts/create?patient_id={{ $appointment->patient->id }}&appointment_id={{ $appointment->id }}" 
+                        class="btn btn-primary">
+                        Create new chart for appointment
+                    </a>
+                </div>
+            
+            </div>
+
         </div>
     </div>
 </div>
